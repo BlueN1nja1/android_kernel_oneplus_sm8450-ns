@@ -1118,15 +1118,15 @@ static void __exit fp_exit(void) {
 module_exit(fp_exit);
 
 #if defined(CONFIG_OPLUS_FINGERPRINT_GKI_ENABLE)
-MODULE_SOFTDEP("pre:mtk_disp_notify");
+MODULE_SOFTDEP("pre: mtk_disp_notify");
 #endif
 
 #if defined(CONFIG_OPLUS_FEATURE_OLC)
-MODULE_SOFTDEP("pre:oplus_log_core");
+MODULE_SOFTDEP("pre: oplus_log_core");
 #endif
 
 #if defined(CONFIG_FP_SUPPLY_MODE_LDO)
-MODULE_SOFTDEP("pre:wl2868c");
+MODULE_SOFTDEP("pre: wl2868c");
 #endif
 
 MODULE_DESCRIPTION("oplus fingerprint common driver");
