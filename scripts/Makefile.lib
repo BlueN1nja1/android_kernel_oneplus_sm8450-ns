@@ -233,11 +233,8 @@ ld_flags       = $(KBUILD_LDFLAGS) $(ldflags-y) $(LDFLAGS_$(@F))
 DTC_INCLUDE    += $(srctree)/scripts/dtc/include-prefixes $(KBUILD_DTC_INCLUDE)
 
 dtc_cpp_flags  = -Wp,-MMD,$(depfile).pre.tmp -nostdinc                    \
-                 -I$(srctree)/arch/$(SRCARCH)/boot/dts               \
-                 -I$(srctree)/arch/$(SRCARCH)/boot/dts/include       \
-                 -I$(srctree)/include                                \
-                 $(addprefix -I,$(DTC_INCLUDE))                      \
-                 -undef -D__DTS__
+		 $(addprefix -I,$(DTC_INCLUDE))                          \
+		 -undef -D__DTS__
 
 # Objtool arguments are also needed for modfinal with LTO, so we define
 # then here to avoid duplication.
