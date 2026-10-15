@@ -1,3 +1,5 @@
+## WARNING!!! DO NOT USE THIS BRANCH! USE N1NJA-ST3ALTH-17 IF YA WANT A WORKING KERNEL. THIS VERSION IS BROKEN AND NO LONGER BEING WORKED ON.
+
 # How do I submit patches to Android Common Kernels
 
 1. BEST: Make all of your changes to upstream Linux. If appropriate, backport to the stable releases.
